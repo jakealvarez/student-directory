@@ -9,6 +9,4 @@ puts "Luke"
 puts "John"
 puts "etc. etc. etc."
 puts ""
-print "Overall, we have"
-print 9
-print " great students"
+print "Overall, we have \n print 9 \n great students"
