@@ -1,14 +1,14 @@
 # note, we use the cohort as a symbol rather than as a string 
 # because we do not expect to change the characters of "november", or otherwise manipualate it. 
 students = [
-  ["Gabe", :november],
-  ["Jordan", :november],
-  ["Sam", :november],
-  ["Matthew", :november],
-  ["Mark", :november],
-  ["Luke", :november],
-  ["John", :november],
-  ["Samantha", :november]
+  {:name => "Gabe", :cohort => :november},
+  {:name => "Jordan", :cohort => :november},
+  {:name => "Sam", :cohort => :november},
+  {:name => "Matthew", :cohort => :november},
+  {:name => "Mark", :cohort => :november},
+  {:name => "Luke", :cohort => :november},
+  {:name => "John", :cohort => :november},
+  {:name => "Samantha", :cohort => :november}
 ]
 
 # define a method for the header
@@ -23,7 +23,7 @@ end
 # which contains the array data.  
 def print(students)
   students.each do |student|
-    puts "#{student[0]} #{student[1]} cohort"
+    puts "#{student[:name]} #{student[:cohort]} cohort"
   end
 end
 
