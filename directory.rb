@@ -1,13 +1,14 @@
-#  first, let's put all students into an array
+# note, we use the cohort as a symbol rather than as a string 
+# because we do not expect to change the characters of "november", or otherwise manipualate it. 
 students = [
-  "Gabe",
-  "Jordan",
-  "Sam",
-  "Matthew",
-  "Mark",
-  "Luke",
-  "John",
-  "Samantha"
+  ["Gabe", :november],
+  ["Jordan", :november],
+  ["Sam", :november],
+  ["Matthew", :november],
+  ["Mark", :november],
+  ["Luke", :november],
+  ["John", :november],
+  ["Samantha", :november]
 ]
 
 # define a method for the header
@@ -20,9 +21,9 @@ end
 # or b) the variable within the block. The only important thing in the method is to 
 # set out what happens to data when the method is executed. Here the real data is "students"
 # which contains the array data.  
-def print(namesss)
-  namesss.each do |hello|
-    puts hello
+def print(students)
+  students.each do |student|
+    puts "#{student[0]} #{student[1]} cohort"
   end
 end
 
