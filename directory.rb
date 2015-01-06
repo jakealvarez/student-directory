@@ -1,16 +1,22 @@
-# first we print the list of student 
-student_count = 9
 puts "The students of my cohort at Makers Academy"
-puts "Gabe"
-puts "..... "
-puts "Jordan"
-puts "Sam"
-puts "Matthew"
-puts "Mark"
-puts "Luke"
-puts "John"
-puts "etc. etc. etc."
-puts ""
-# finally we print the total. 
-puts "Overall, we have #{student_count} great students"
-# it's important that print does not add new line characters. 
+# let's put all students into an array
+students = [
+  "Gabe",
+  "Jordan",
+  "Sam",
+  "Matthew",
+  "Mark",
+  "Luke",
+  "John"
+]
+# and then print out each element of the array. 
+puts students[0]
+puts students[1]
+puts students[2]
+puts students[3]
+puts students[4]
+puts students[5]
+puts students[6]
+puts students[6]
+#finally, we print the total
+puts "Overall, we have #{students.length} great students"
